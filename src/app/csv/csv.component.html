@@ -1,0 +1,11 @@
+<form class="form" role="form" #form="ngForm" autocomplete="off">
+    
+<div class="float-label-control">
+   <a class="btn btn-sm btn-primary" href="javascript:;">Upload Contract    
+    File    
+    <input class="uploadfile-style"  
+     name="file" (change)="submitAdv($event)" size="10" type="file">
+  </a></div>
+<div class="success" *ngIf="successMsg" >Successfully Uploaded</div>
+</form>    
+
